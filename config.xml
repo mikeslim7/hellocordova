@@ -18,3 +18,6 @@
     </author>
 
 </widget>
+
+<gap:plugin name="Contacts" />
+
