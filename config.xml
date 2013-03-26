@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.hellocordova"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Testing PhoneGap Build</name>
+
+    <description>
+        An example for phonegap build docs. 
+    </description>
+
+    <author href="http://teelkenya.com" email="mikeslim7@gmail.com">
+        Mike Slim 7
+    </author>
+
+</widget>
