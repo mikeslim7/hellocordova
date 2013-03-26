@@ -17,7 +17,9 @@
         Mike Slim 7
     </author>
 
+<gap:plugin name="Contacts" />
+
 </widget>
 
-<gap:plugin name="Contacts" />
+
 
