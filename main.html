@@ -14,7 +14,10 @@
     function onDeviceReady() {
         var myContact = navigator.contacts.create({"displayName": "Test User Cordova"});
         myContact.note = "This contact has a note.";
-        console.log("The contact, " + myContact.displayName + ", note: " + myContact.note);
+        //console.log("The contact, " + myContact.displayName + ", note: " + myContact.note);
+        
+        elem = document.getElementById('contact_create');
+        elem.innerHTML = "The contact, " + myContact.displayName + ", note: " + myContact.note;
         
         // find all contacts with 'Test' in any name field
         var options = new ContactFindOptions();
@@ -27,14 +30,18 @@
     //
     function onSuccess(contacts) {
         for (var i=0; i<contacts.length; i++) {
-            console.log("Display Name = " + contacts[i].displayName);
+            //console.log("Display Name = " + contacts[i].displayName);
+            elem1 = document.getElementById('contact_find');
+            elem1.innerHTML = "Display Name = " + contacts[i].displayName;
         }
     }
 
     // onError: Failed to get the contacts
     //
     function onError(contactError) {
-        alert('onError!');
+        elem1 = document.getElementById('contact_find');
+        elem1.innerHTML = "Error!";
+        //alert('onError!');
     }
 
     </script>
@@ -49,8 +56,10 @@ Body is here
 <input type="radio" />
 <input type="checkbox" />
 <input type="button" />
-<textarea cols="2" roww="5">
+<textarea cols="10" rows="5">
   
 </textarea>
+<div id="contact_create"></div>
+<div id="contact_find"></div>
 </body>
 </html>
